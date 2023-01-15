@@ -118,7 +118,7 @@ spec:
 
         volumeMounts:
 
-        - name: data
+        - name: tofaha
 
           mountPath: /var/lib/mysql
 
@@ -148,7 +148,7 @@ spec:
 
         volumeMounts:
 
-        - name: data
+        - name: tofaha
 
           mountPath: /var/lib/mysql
 
@@ -288,7 +288,7 @@ spec:
 
         volumeMounts:
 
-        - name: data
+        - name: tofaha
 
           mountPath: /var/lib/mysql
 
