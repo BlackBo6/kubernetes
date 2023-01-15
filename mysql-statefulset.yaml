@@ -317,7 +317,7 @@ spec:
         configMap:
 
           name: mysql
-      - name: data
+      - name: tofaha
         persistentVolumeClaim:
           claimName: mysql-pv-claim
 
