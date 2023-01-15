@@ -81,6 +81,12 @@ spec:
         - name: config-map
 
           mountPath: /mnt/config-map
+        - name: tofaha
+
+          mountPath: /var/lib/mysql
+
+          subPath: mysql
+
 
       - name: clone-mysql
 
