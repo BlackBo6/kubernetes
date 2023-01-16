@@ -81,11 +81,7 @@ spec:
         - name: config-map
 
           mountPath: /mnt/config-map
-        - name: tofaha
 
-          mountPath: /var/lib/mysql
-
-          subPath: mysql
 
 
       - name: clone-mysql
@@ -323,6 +319,7 @@ spec:
         configMap:
 
           name: mysql
+          
       - name: tofaha
         persistentVolumeClaim:
           claimName: mysql-pv-claim
