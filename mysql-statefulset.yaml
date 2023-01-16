@@ -82,8 +82,6 @@ spec:
 
           mountPath: /mnt/config-map
 
-
-
       - name: clone-mysql
 
         image: gcr.io/google-samples/xtrabackup:1.0
@@ -120,7 +118,7 @@ spec:
 
         volumeMounts:
 
-        - name: tofaha
+        - name: data
 
           mountPath: /var/lib/mysql
 
@@ -150,7 +148,7 @@ spec:
 
         volumeMounts:
 
-        - name: tofaha
+        - name: data
 
           mountPath: /var/lib/mysql
 
@@ -290,7 +288,7 @@ spec:
 
         volumeMounts:
 
-        - name: tofaha
+        - name: data
 
           mountPath: /var/lib/mysql
 
@@ -319,8 +317,7 @@ spec:
         configMap:
 
           name: mysql
-          
-      - name: tofaha
+
+      - name: data
         persistentVolumeClaim:
           claimName: mysql-pv-claim
-
